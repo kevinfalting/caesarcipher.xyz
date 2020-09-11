@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <meta name="description" content="A simple Caesar Cipher to encrypt and decrypt messages.">
+  <meta name="author" content="Kevin Falting">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h1 style="text-align: center; padding-top: 8%;">Caesar Cipher</h1>
+      </div>
+    </div>
+    <hr>
+    <div class="row" style="margin-top: 8%">
+      <div class="five columns">
+        <textarea id="input" class="u-full-width" placeholder="Enter text here..." oninput="calculate()"></textarea>
+      </div>
+      <div class="two columns">
+        <input type="number" id="shift" value="0" onchange="calculate()">
+      </div>
+      <div class="five columns">
+        <p id="output"></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="twelve columns">
+        <textarea id="alphabet" class="u-full-width" placeholder="Enter custom alphabet here..." oninput="calculate()"></textarea>
+        <p style="text-align: center;">em lwv'b zqam bw bpm tmdmt wn wcz mfxmkbibqwva; em nitt bw bpm tmdmt wn wcz bziqvqvo.  </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/caesarcipher.js"></script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
